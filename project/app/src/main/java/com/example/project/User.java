@@ -31,7 +31,7 @@ public class User extends AppCompatActivity {
         Cursor cursor = db.query("Checklist", null, null, null, null, null, null);
         if(cursor.moveToFirst()){
             do{
-                String content = "*  " + cursor.getString(0);
+                String content = cursor.getString(0);
                 addNewRow(content);
             }while(cursor.moveToNext());
         }
