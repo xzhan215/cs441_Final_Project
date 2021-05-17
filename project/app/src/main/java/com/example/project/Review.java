@@ -66,7 +66,7 @@ public class Review extends AppCompatActivity {
                 Cursor cursor = db.rawQuery("Select * from Review where order_number=? and factory=? and created_at=?", new String[] {order_num, factory, time});
                 if(cursor.moveToFirst()){
                     String message = cursor.getString(2);
-                    content.setText("Order Number: " + order_num + "\n" + "Factory: " + factory + "\n" + message);
+                    content.setText("Order Number: " + order_num + "\n\n" + "Factory: " + factory + "\n\n" + message);
                     content.setVisibility(View.VISIBLE);
                     back1.setVisibility(View.VISIBLE);
                     layout.setVisibility(View.GONE);

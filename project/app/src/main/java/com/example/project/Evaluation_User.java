@@ -82,7 +82,7 @@ public class Evaluation_User extends AppCompatActivity {
             TextView category = (TextView) v.findViewById(R.id.content);
             Spinner level = (Spinner) v.findViewById(R.id.spinner);
             EditText comments = (EditText) v.findViewById(R.id.inputbox);
-            retval += Integer.toString(i+1) + ". " + category.getText() + "\nCondition Level: " + level.getSelectedItem().toString() + "\n Comments: " + comments.getText() + "\n";
+            retval += Integer.toString(i+1) + ". " + category.getText() + "\n     Condition Level: " + level.getSelectedItem().toString() + "\n     Comments: " + comments.getText() + "\n\n";
         }
         return retval;
     }

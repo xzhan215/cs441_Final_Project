@@ -29,12 +29,10 @@ public class User extends AppCompatActivity {
     public void initializeChecklist() {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.query("Checklist", null, null, null, null, null, null);
-        int seq = 1;
         if(cursor.moveToFirst()){
             do{
-                String content = seq + ". " + cursor.getString(0);
+                String content = "*  " + cursor.getString(0);
                 addNewRow(content);
-                seq ++;
             }while(cursor.moveToNext());
         }
     }
