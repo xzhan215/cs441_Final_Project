@@ -33,6 +33,7 @@
 
     <Button
         android:id="@+id/button4"
+        android:onClick="log_out"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginBottom="256dp"
